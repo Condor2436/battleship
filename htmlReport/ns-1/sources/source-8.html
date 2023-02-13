@@ -1,0 +1,102 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > App</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">edu.duke.zj82.battleship</a>
+</div>
+
+<h1>Coverage Summary for Class: App (edu.duke.zj82.battleship)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">App$__CLR4_3_12q2qldu3gf1y</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package edu.duke.zj82.battleship;
+&nbsp;
+&nbsp;
+&nbsp;import org.w3c.dom.Text;
+&nbsp;
+&nbsp;import java.io.*;
+&nbsp;
+&nbsp;public class App {
+&nbsp;
+&nbsp;
+&nbsp;    public TextPlayer player1;
+&nbsp;    public TextPlayer player2;
+&nbsp;
+&nbsp;    public App(Board&lt;Character&gt; b1, Board&lt;Character&gt; b2, Reader inputSource, PrintStream out) {
+&nbsp;        this.player1 = new TextPlayer(b1,inputSource,out,&quot;A&quot;);
+&nbsp;        this.player2 = new TextPlayer(b2,inputSource,out,&quot;B&quot;);
+&nbsp;    }
+&nbsp;
+&nbsp;    public void doPlacementPhase() throws IOException {
+&nbsp;        player1.doOnePlacement();
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public static void main(String[] args) throws IOException{
+&nbsp;        Board&lt;Character&gt; b1 = new BattleShipBoard&lt;Character&gt;(10,20);
+&nbsp;        Board&lt;Character&gt; b2 = new BattleShipBoard&lt;Character&gt;(10,20);
+&nbsp;        InputStreamReader sr = new InputStreamReader(System.in);
+&nbsp;        App app = new App(b1,b2,sr,System.out);
+&nbsp;        app.doPlacementPhase();
+&nbsp;    }
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-07 18:23</div>
+</div>
+</body>
+</html>

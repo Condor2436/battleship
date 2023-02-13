@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ce84258-41fa-45df-9228-152513f31c6f" name="Changes" comment="V2: fix bugs: after player moves, the ship display on enemy board also moved; another bug is caused by fix the previous bug, after fireAt, the enemy board display error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="E:\hw_and_software\Master\ECE_651\battleship\htmlReport" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2LJNSABQZZqscvnkuVLsQepawSy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/hw_and_software/Master/ECE_651/battleship/src/main/java/duke/edu/zj82/battleship&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/hw_and_software/Master/ECE_651/battleship_v1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.duke.zj82.battleship.App" />
+      <module name="battleship.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.duke.zj82.battleship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BattleShipBoardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;BattleShipBoardTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BattleShipBoardTest.test_fireAt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;BattleShipBoardTest.test_fireAt&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BattleShipBoardTest.test_whatIsAtForEnemy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;BattleShipBoardTest.test_whatIsAtForEnemy&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'battleship.test'" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TextPlayerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TextPlayerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Gradle.Tests in 'battleship.test'" />
+      <item itemvalue="Gradle.BattleShipBoardTest" />
+      <item itemvalue="Gradle.BattleShipBoardTest.test_fireAt" />
+      <item itemvalue="Gradle.BattleShipBoardTest.test_whatIsAtForEnemy" />
+      <item itemvalue="Gradle.TextPlayerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.BattleShipBoardTest" />
+        <item itemvalue="Gradle.BattleShipBoardTest.test_fireAt" />
+        <item itemvalue="Gradle.BattleShipBoardTest.test_whatIsAtForEnemy" />
+        <item itemvalue="Gradle.TextPlayerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ce84258-41fa-45df-9228-152513f31c6f" name="Changes" comment="" />
+      <created>1675585228182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675585228182</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Goal 3 with tests">
+      <created>1675601780722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675601780722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="G1 T1">
+      <created>1675603662465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675603662465</updated>
+    </task>
+    <task id="LOCAL-00003" summary="G1 T2">
+      <created>1675605566899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675605566899</updated>
+    </task>
+    <task id="LOCAL-00004" summary="G1 T3">
+      <created>1675607246922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675607246922</updated>
+    </task>
+    <task id="LOCAL-00005" summary="G1 T4">
+      <created>1675608902442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675608902442</updated>
+    </task>
+    <task id="LOCAL-00006" summary="G1 T5">
+      <created>1675608991729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675608991729</updated>
+    </task>
+    <task id="LOCAL-00007" summary="G1 T6">
+      <created>1675609193914</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675609193914</updated>
+    </task>
+    <task id="LOCAL-00008" summary="G1 T7">
+      <created>1675611460444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675611460444</updated>
+    </task>
+    <task id="LOCAL-00009" summary="G1 T8">
+      <created>1675612680583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675612680583</updated>
+    </task>
+    <task id="LOCAL-00010" summary="G1 T9 unfinished">
+      <created>1675617697382</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675617697382</updated>
+    </task>
+    <task id="LOCAL-00011" summary="G1 T9 without main test, question on AppTest for test_read_placement and test_onePlace, assertEquals(prompt + &quot;\n&quot;, bytes.toString()) results in error but no difference in comparison">
+      <created>1675619231292</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675619231292</updated>
+    </task>
+    <task id="LOCAL-00012" summary="G1 T9">
+      <created>1675695958338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675695958338</updated>
+    </task>
+    <task id="LOCAL-00013" summary="G2 T10">
+      <created>1675702027972</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675702027972</updated>
+    </task>
+    <task id="LOCAL-00014" summary="G2 T11">
+      <created>1675703017024</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675703017024</updated>
+    </task>
+    <task id="LOCAL-00015" summary="G2 T12">
+      <created>1675707003696</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675707003696</updated>
+    </task>
+    <task id="LOCAL-00016" summary="G2 T13">
+      <created>1675760545545</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675760545545</updated>
+    </task>
+    <task id="LOCAL-00017" summary="G2 T14">
+      <created>1675761619426</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675761619426</updated>
+    </task>
+    <task id="LOCAL-00018" summary="G3 T15">
+      <created>1675761837702</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675761837702</updated>
+    </task>
+    <task id="LOCAL-00019" summary="G4 T16&#10;P.S. cannot solve the problem that in the main test, the InputStream can only get one line of argument. In input.txt, there are A4V and B0H. In player1, readline() can get A4V, if call readline() in player1 again, it will give me B0H, but if the second call is in player2, it will give me null. &#10;Update: change the line separators from &quot;\r\n&quot; to &quot;\n&quot;">
+      <created>1675781085345</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675781085345</updated>
+    </task>
+    <task id="LOCAL-00020" summary="G4 T17&#10;Same question as before, I save the input in the input.txt and output in output.txt">
+      <created>1675782651250</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675782651250</updated>
+    </task>
+    <task id="LOCAL-00021" summary="G4 T17&#10;Same question as before, I save the input in the input.txt and output in output.txt">
+      <created>1675782948426</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675782948426</updated>
+    </task>
+    <task id="LOCAL-00022" summary="G4 T17&#10;Same question as before, I save the input in the input.txt and output in output.txt">
+      <created>1675782968684</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675782968684</updated>
+    </task>
+    <task id="LOCAL-00023" summary="G4 T18&#10;Same question as before, I save the input in the input.txt and output in output.txt">
+      <created>1675785018609</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675785018609</updated>
+    </task>
+    <task id="LOCAL-00024" summary="G5 T19">
+      <created>1675866596094</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675866596094</updated>
+    </task>
+    <task id="LOCAL-00025" summary="G5 T20">
+      <created>1675869873005</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675869873005</updated>
+    </task>
+    <task id="LOCAL-00026" summary="G5 T21">
+      <created>1675870730077</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870730077</updated>
+    </task>
+    <task id="LOCAL-00027" summary="G5 T22">
+      <created>1675872900329</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675872900329</updated>
+    </task>
+    <task id="LOCAL-00028" summary="G5 T22&#10;Make the game print the error message and allow the user to give another input instead of terminate the process: Place the ship and FireAt">
+      <created>1676036550264</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676036550264</updated>
+    </task>
+    <task id="LOCAL-00029" summary="V2: TShapedShip and ZShapedShip with tests">
+      <created>1676039142753</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676039142753</updated>
+    </task>
+    <task id="LOCAL-00030" summary="V2: V2ShipFactory with test">
+      <created>1676041100473</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676041100473</updated>
+    </task>
+    <task id="LOCAL-00031" summary="V2: update Textplayer to make it work for V2">
+      <created>1676041605029</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676041605029</updated>
+    </task>
+    <task id="LOCAL-00032" summary="V2: add features: move and scan, put them with original app">
+      <created>1676082408353</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1676082408353</updated>
+    </task>
+    <task id="LOCAL-00033" summary="V2: fix bug that app.main report non-zero exit">
+      <created>1676106245639</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1676106245639</updated>
+    </task>
+    <task id="LOCAL-00034" summary="V2: add stupid computer player">
+      <created>1676190552544</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676190552544</updated>
+    </task>
+    <task id="LOCAL-00035" summary="V2: fix a bug that Player's method playOneTurn didn't override, leads to player cannot go into the turn and if computer move first, computer will directly win the game">
+      <created>1676191304633</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1676191304633</updated>
+    </task>
+    <task id="LOCAL-00036" summary="V2: update workspace.xml">
+      <created>1676261479379</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1676261479379</updated>
+    </task>
+    <task id="LOCAL-00037" summary="V2: add commit">
+      <created>1676272454355</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272454355</updated>
+    </task>
+    <task id="LOCAL-00038" summary="V2: fix bugs: after player moves, the ship display on enemy board also moved; another bug is caused by fix the previous bug, after fireAt, the enemy board display error">
+      <created>1676299726567</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1676299726567</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="G1 T9" />
+    <MESSAGE value="G2 T10" />
+    <MESSAGE value="G2 T11" />
+    <MESSAGE value="G2 T12" />
+    <MESSAGE value="G2 T13" />
+    <MESSAGE value="G2 T14" />
+    <MESSAGE value="G3 T15" />
+    <MESSAGE value="G4 T16&#10;P.S. cannot solve the problem that in the main test, the InputStream can only get one line of argument. In input.txt, there are A4V and B0H. In player1, readline() can get A4V, if call readline() in player1 again, it will give me B0H, but if the second call is in player2, it will give me null. &#10;Update: change the line separators from &quot;\r\n&quot; to &quot;\n&quot;" />
+    <MESSAGE value="G4 T17&#10;Same question as before, I save the input in the input.txt and output in output.txt" />
+    <MESSAGE value="G4 T18&#10;Same question as before, I save the input in the input.txt and output in output.txt" />
+    <MESSAGE value="G5 T19" />
+    <MESSAGE value="G5 T20" />
+    <MESSAGE value="G5 T21" />
+    <MESSAGE value="G5 T22" />
+    <MESSAGE value="G5 T22&#10;Make the game print the error message and allow the user to give another input instead of terminate the process: Place the ship and FireAt" />
+    <MESSAGE value="V2: TShapedShip and ZShapedShip with tests" />
+    <MESSAGE value="V2: V2ShipFactory with test" />
+    <MESSAGE value="V2: update Textplayer to make it work for V2" />
+    <MESSAGE value="V2: add features: move and scan, put them with original app" />
+    <MESSAGE value="V2: fix bug that app.main report non-zero exit" />
+    <MESSAGE value="V2: add stupid computer player" />
+    <MESSAGE value="V2: fix a bug that Player's method playOneTurn didn't override, leads to player cannot go into the turn and if computer move first, computer will directly win the game" />
+    <MESSAGE value="V2: update workspace.xml" />
+    <MESSAGE value="V2: add commit" />
+    <MESSAGE value="V2: fix bugs: after player moves, the ship display on enemy board also moved; another bug is caused by fix the previous bug, after fireAt, the enemy board display error" />
+    <option name="LAST_COMMIT_MESSAGE" value="V2: fix bugs: after player moves, the ship display on enemy board also moved; another bug is caused by fix the previous bug, after fireAt, the enemy board display error" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/battleship$SimpleShipDisplayInfoTest.ic" NAME="SimpleShipDisplayInfoTest Coverage Results" MODIFIED="1675700593213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$V1ShipFactoryTest_test_BB.ic" NAME="V1ShipFactoryTest.test_BB Coverage Results" MODIFIED="1675706548210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$V1ShipFactoryTest_test_DD.ic" NAME="V1ShipFactoryTest.test_DD Coverage Results" MODIFIED="1675706541755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$RectangleShipTest_test_makeCoor.ic" NAME="RectangleShipTest.test_makeCoor Coverage Results" MODIFIED="1675699089739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$InBoundsRuleCheckerTest_test_true.ic" NAME="InBoundsRuleCheckerTest.test_true Coverage Results" MODIFIED="1675760032074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$NoCollisionRuleCheckerTest_test_BattleShipBoard_constructor.ic" NAME="NoCollisionRuleCheckerTest.test_BattleShipBoard_constructor Coverage Results" MODIFIED="1675761590856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$App.ic" NAME="App Coverage Results" MODIFIED="1675585561311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>duke.edu.zj82.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/battleship$CoordinateTest.ic" NAME="CoordinateTest Coverage Results" MODIFIED="1675609379603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$NoCollisionRuleCheckerTest.ic" NAME="NoCollisionRuleCheckerTest Coverage Results" MODIFIED="1675784628185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$BattleShipBoardTest.ic" NAME="BattleShipBoardTest Coverage Results" MODIFIED="1675862065442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$RunAll.ic" NAME="RunAll Coverage Results" MODIFIED="1675612489392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$CoordinateTest_test_equals.ic" NAME="CoordinateTest.test_equals Coverage Results" MODIFIED="1675606597867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$TextPlayerTest.ic" NAME="TextPlayerTest Coverage Results" MODIFIED="1675785154211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$RectangleShipTest.ic" NAME="RectangleShipTest Coverage Results" MODIFIED="1675599200885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$All_in_battleship_test.ic" NAME="All in battleship.test Coverage Results" MODIFIED="1675785028911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$coordinateTest_test_equals.ic" NAME="coordinateTest.test_equals Coverage Results" MODIFIED="1675606474185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$BoardTextViewTest.ic" NAME="BoardTextViewTest Coverage Results" MODIFIED="1675609354913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$AppTest_test_read_placement.ic" NAME="AppTest.test_read_placement Coverage Results" MODIFIED="1675614204470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$Tests_in__battleship_test_.ic" NAME="Tests in 'battleship.test' Coverage Results" MODIFIED="1676190458294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$InBoundsRuleCheckerTest.ic" NAME="InBoundsRuleCheckerTest Coverage Results" MODIFIED="1675759253851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$V1ShipFactoryTest.ic" NAME="V1ShipFactoryTest Coverage Results" MODIFIED="1675704737350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1675765226255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$PlacementTest.ic" NAME="PlacementTest Coverage Results" MODIFIED="1675609386763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/battleship$AppTest_test_main.ic" NAME="AppTest.test_main Coverage Results" MODIFIED="1675694573609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

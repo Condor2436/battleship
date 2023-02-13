@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > RectangleShip</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">edu.duke.zj82.battleship</a>
+</div>
+
+<h1>Coverage Summary for Class: RectangleShip (edu.duke.zj82.battleship)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_11717ldu14gb1</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_11b1bldu3gf1b</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt3yyyz</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt405yz</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt46ok1</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt46vj1</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt4b0nt</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt4ch6a</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt4mjfd</td>
+  </tr>
+  <tr>
+    <td class="name">RectangleShip$__CLR4_3_1qqldt4nsiw</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package edu.duke.zj82.battleship;
+&nbsp;
+&nbsp;import java.util.HashMap;
+&nbsp;import java.util.HashSet;
+&nbsp;
+&nbsp;public class RectangleShip&lt;T&gt; extends BasicShip&lt;T&gt;{
+&nbsp;    private final String name;
+&nbsp;    public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo&lt;T&gt; myDisplayInfo) {
+&nbsp;        super(makeCoords(upperLeft, width, height), myDisplayInfo);
+&nbsp;        this.name = name;
+&nbsp;    }
+&nbsp;    public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
+&nbsp;        this(name, upperLeft, width, height, new SimpleShipDisplayInfo&lt;T&gt;(data, onHit));
+&nbsp;    }
+&nbsp;    public RectangleShip(Coordinate upperLeft, T data, T onHit) {
+&nbsp;        this(&quot;testship&quot;, upperLeft, 1, 1, data, onHit);
+&nbsp;    }
+&nbsp;    static HashSet&lt;Coordinate&gt; makeCoords(Coordinate upperLeft, int width, int height){
+&nbsp;        HashSet&lt;Coordinate&gt; ans = new HashSet&lt;Coordinate&gt;();
+&nbsp;        for(int i = 0; i &lt; width; i++){
+&nbsp;            for(int j = 0; j &lt; height; j++){
+&nbsp;                Coordinate curr = new Coordinate(upperLeft.getRow()+j, upperLeft.getColumn()+i);
+&nbsp;                ans.add(curr);
+&nbsp;            }
+&nbsp;        }
+&nbsp;        return ans;
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public String getName() {
+&nbsp;        return this.name;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-07 18:23</div>
+</div>
+</body>
+</html>

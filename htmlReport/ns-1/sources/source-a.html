@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > V1ShipFactory</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">edu.duke.zj82.battleship</a>
+</div>
+
+<h1>Coverage Summary for Class: V1ShipFactory (edu.duke.zj82.battleship)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt3yz18</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt4061b</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt46oly</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt46vm4</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt4b0qr</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15t5tldt4ch8o</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15u5uldt4mjia</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_15u5uldt4nsl3</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_16v6vldu14gdj</td>
+  </tr>
+  <tr>
+    <td class="name">V1ShipFactory$__CLR4_3_17676ldu3gf44</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package edu.duke.zj82.battleship;
+&nbsp;
+&nbsp;public class V1ShipFactory implements AbstractShipFactory&lt;Character&gt;{
+&nbsp;
+&nbsp;    protected Ship&lt;Character&gt; createShip(Placement where, int w, int h, char letter, String name){
+&nbsp;        if(where.getOrientation()==&#39;H&#39;){
+&nbsp;            return new RectangleShip&lt;Character&gt;(name,where.getWhere(),h,w,new SimpleShipDisplayInfo&lt;Character&gt;(letter,&#39;*&#39;));
+&nbsp;        } else {
+&nbsp;            return new RectangleShip&lt;Character&gt;(name,where.getWhere(),w,h,new SimpleShipDisplayInfo&lt;Character&gt;(letter,&#39;*&#39;));
+&nbsp;        }
+&nbsp;    }
+&nbsp;    @Override
+&nbsp;    public Ship&lt;Character&gt; makeSubmarine(Placement where) {
+&nbsp;        return createShip(where, 1, 2, &#39;s&#39;, &quot;Submarine&quot;);
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public Ship&lt;Character&gt; makeBattleship(Placement where) {
+&nbsp;        return createShip(where, 1, 4, &#39;b&#39;, &quot;Battleship&quot;);
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public Ship&lt;Character&gt; makeCarrier(Placement where) {
+&nbsp;        return createShip(where, 1, 6, &#39;c&#39;, &quot;Carrier&quot;);
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public Ship&lt;Character&gt; makeDestroyer(Placement where) {
+&nbsp;        return createShip(where, 1, 3, &#39;d&#39;, &quot;Destroyer&quot;);
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-07 18:23</div>
+</div>
+</body>
+</html>

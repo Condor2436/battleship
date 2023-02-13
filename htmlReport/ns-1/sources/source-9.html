@@ -1,0 +1,149 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > BoardTextView</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">edu.duke.zj82.battleship</a>
+</div>
+
+<h1>Coverage Summary for Class: BoardTextView (edu.duke.zj82.battleship)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt3yz0a</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt40601</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt46ol5</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt46vku</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt4b0pn</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12m2mldt4ch7q</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12n2nldt4mjha</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_12n2nldt4nsk2</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_13o3oldu14gcm</td>
+  </tr>
+  <tr>
+    <td class="name">BoardTextView$__CLR4_3_13z3zldu3gf35</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package edu.duke.zj82.battleship;
+&nbsp;
+&nbsp;public class BoardTextView {
+&nbsp;    private final Board&lt;Character&gt; toDisplay;
+&nbsp;    public BoardTextView(Board&lt;Character&gt; toDisplay){
+&nbsp;        this.toDisplay = toDisplay;
+&nbsp;        if (toDisplay.getWidth() &gt; 10 || toDisplay.getHeight() &gt; 26) {
+&nbsp;            throw new IllegalArgumentException(
+&nbsp;                    &quot;Board must be no larger than 10x26, but is &quot; + toDisplay.getWidth() + &quot;x&quot; + toDisplay.getHeight());
+&nbsp;        }
+&nbsp;    }
+&nbsp;    public String displayMyOwnBoard() {
+&nbsp;        String ans=&quot;&quot;;
+&nbsp;        ans += makeHeader();
+&nbsp;        for(int i = 0; i &lt; toDisplay.getHeight(); i++){
+&nbsp;            ans += makeBody(i);
+&nbsp;        }
+&nbsp;        ans += makeHeader();
+&nbsp;        return ans; //this is a placeholder for the moment
+&nbsp;    }
+&nbsp;    public String makeHeader() {
+&nbsp;        StringBuilder ans = new StringBuilder(&quot;  &quot;); // README shows two spaces at
+&nbsp;        String sep=&quot;&quot;; //start with nothing to separate, then switch to | to separate
+&nbsp;        for (int i = 0; i &lt; toDisplay.getWidth(); i++) {
+&nbsp;            ans.append(sep);
+&nbsp;            ans.append(i);
+&nbsp;            sep = &quot;|&quot;;
+&nbsp;        }
+&nbsp;        ans.append(&quot;\n&quot;);
+&nbsp;        return ans.toString();
+&nbsp;    }
+&nbsp;    public String makeBody(int line){
+&nbsp;        char l = (char) (&#39;A&#39; + line);
+&nbsp;        Character c = (Character) l;
+&nbsp;        String letter = c.toString();
+&nbsp;        String sep =&quot;&quot;;
+&nbsp;        StringBuilder ans = new StringBuilder(letter+&quot; &quot;);
+&nbsp;        for(int i = 0; i &lt; toDisplay.getWidth();i++){
+&nbsp;            ans.append(sep);
+&nbsp;            Coordinate temp = new Coordinate(line, i);
+&nbsp;            if(toDisplay.whatIsAt(temp)==null){
+&nbsp;                ans.append(&quot; &quot;);
+&nbsp;            } else {
+&nbsp;                ans.append(toDisplay.whatIsAt(temp));
+&nbsp;            }
+&nbsp;            sep = &quot;|&quot;;
+&nbsp;        }
+&nbsp;        ans.append(&quot; &quot;+letter);
+&nbsp;        ans.append(&quot;\n&quot;);
+&nbsp;        return ans.toString();
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-07 18:23</div>
+</div>
+</body>
+</html>

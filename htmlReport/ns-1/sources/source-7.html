@@ -1,0 +1,105 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > TextPlayer</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">edu.duke.zj82.battleship</a>
+</div>
+
+<h1>Coverage Summary for Class: TextPlayer (edu.duke.zj82.battleship)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">TextPlayer$__CLR4_3_13131ldu3gf25</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package edu.duke.zj82.battleship;
+&nbsp;
+&nbsp;import java.io.BufferedReader;
+&nbsp;import java.io.IOException;
+&nbsp;import java.io.PrintStream;
+&nbsp;import java.io.Reader;
+&nbsp;
+&nbsp;public class TextPlayer {
+&nbsp;    public final Board&lt;Character&gt; theBoard;
+&nbsp;    public final BoardTextView view;
+&nbsp;    public final BufferedReader inputReader;
+&nbsp;    public final PrintStream out;
+&nbsp;    final AbstractShipFactory&lt;Character&gt; shipFactory;
+&nbsp;    public String name;
+&nbsp;
+&nbsp;    public TextPlayer(Board&lt;Character&gt; theBoard, Reader inputSource, PrintStream out, String name) {
+&nbsp;        this.theBoard = theBoard;
+&nbsp;        this.view = new BoardTextView(theBoard);
+&nbsp;        this.inputReader = new BufferedReader(inputSource);
+&nbsp;        this.out = out;
+&nbsp;        this.shipFactory = new V1ShipFactory();
+&nbsp;        this.name = name;
+&nbsp;    }
+&nbsp;    public Placement readPlacement(String prompt) throws IOException {
+&nbsp;        out.println(prompt);
+&nbsp;        String s = inputReader.readLine();
+&nbsp;        return new Placement(s);
+&nbsp;    }
+&nbsp;    public void doOnePlacement() throws IOException{
+&nbsp;        Placement place = readPlacement(&quot;Where would you like to put your ship?&quot;);
+&nbsp;        Ship&lt;Character&gt; ship = shipFactory.makeDestroyer(place);
+&nbsp;        theBoard.tryAddShip(ship);
+&nbsp;        out.println(view.displayMyOwnBoard());
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-07 18:23</div>
+</div>
+</body>
+</html>
